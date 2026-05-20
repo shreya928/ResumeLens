@@ -1,4 +1,4 @@
-# SmartResume - AI Resume Assistant 🚀
+# ResumeLens - AI Resume Assistant 🚀
 
 <div align="center">
 
