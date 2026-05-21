@@ -77,7 +77,7 @@ This guide will walk you through setting up a local development environment.
 
 1.  **📂 Clone the Repository**
     ```sh
-    git clone [https://github.com/aaditya0004/smart-resume-app.git](https://github.com/aaditya0004/smart-resume-app.git)
+    git clone https://github.com/shreya928/ResumeLens
     cd smart-resume-app
     ```
 
