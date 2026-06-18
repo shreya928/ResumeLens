@@ -10,20 +10,23 @@ import resumeRoutes from "./routes/resumeRoutes.js";
 import customizeRoutes from "./routes/customizeRoutes.js";
 import { protect } from "./middleware/authMiddleware.js";
 
-console.log("CORS ORIGIN:", process.env.CORS_ORIGIN);
+console.log("CLIENT URL:", process.env.CLIENT_URL);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
 // app.use(cors());
-const corsOptions = {
-    origin: true,origin: ["http://localhost:5173", process.env.CLIENT_URL],
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    allowedHeaders: "Content-Type,Authorization", // We must allow the Authorization header
-    credentials: true,
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//     origin: true,origin: ["http://localhost:5173", process.env.CLIENT_URL],
+//     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//     allowedHeaders: "Content-Type,Authorization", // We must allow the Authorization header
+//     credentials: true,
+// };
+app.use(cors({
+  origin: process.env.CLIENT_URL,
+  credentials: true
+}));
 app.use(express.json());
 
 // Connect to MongoDB
