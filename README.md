@@ -18,7 +18,7 @@
 
 ### 🌐 Live Demo
 
-**[SmartResume](https://smartresume-app.netlify.app/)**
+**[SmartResume](https://resume-lens-ruby.vercel.app/register)**
 
 ---
 
