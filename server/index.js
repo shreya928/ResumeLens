@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 // app.use(cors());
 const corsOptions = {
-    origin: true,
+    origin: true,origin: ["http://localhost:5173", process.env.CLIENT_URL],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     allowedHeaders: "Content-Type,Authorization", // We must allow the Authorization header
     credentials: true,
